@@ -44,4 +44,6 @@ public interface IPath
     ReadOnlySpan<char> TrimEndingDirectorySeparator(ReadOnlySpan<char> path);
     bool EndsInDirectorySeparator(ReadOnlySpan<char> path);
     bool EndsInDirectorySeparator(string path);
+    char[] GetInvalidFileNameChars();
+    char[] GetInvalidPathChars();
 }

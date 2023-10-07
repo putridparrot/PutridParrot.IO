@@ -26,6 +26,7 @@ public interface IDirectory
     string[] GetFiles(string path, string searchPattern);
     string[] GetFiles(string path, string searchPattern, EnumerationOptions enumerationOptions);
     string[] GetFiles(string path, string searchPattern, SearchOption searchOption);
+    FileSystemInfo CreateSymbolicLink(string path, string pathToTarget);
     string[] GetDirectories(string path);
     string[] GetDirectories(string path, string searchPattern);
     string[] GetDirectories(string path, string searchPattern, EnumerationOptions enumerationOptions);
